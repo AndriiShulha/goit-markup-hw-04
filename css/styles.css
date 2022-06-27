@@ -170,8 +170,20 @@ section {
     display: flex;
 }
 
+
+
 .header-contact {
     margin-left: auto
+}
+
+.header-contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contacts-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-logo {
@@ -458,9 +470,28 @@ section {
 }
 
     .benefits-info {
-        widows: 270px;
+        width: 270px;
         flex-basis: calc((100% - 90px) / 4);
     }
+
+    .benefits-icon {
+        width: 70px;
+        height: 70px;
+
+    }
+
+        .benefits-icon-list {
+            width: 270px;
+            height: 120px;
+            background: #F5F4FA;
+            border-radius: 4px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            
+        }
 
 
     .benefits-about {
