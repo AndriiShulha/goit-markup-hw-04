@@ -207,16 +207,7 @@ section {
     
           }
 
-    .header-link:hover,
-    .header-link:focus {
-        color: var(--accent-txt-color);
-    }
-
-
-    .header-link {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
+    
 
     .header-contact {
         font-weight: 500;
@@ -230,6 +221,60 @@ section {
     .header-cntct {
         margin-left: 50px;
     }
+
+        .header-link:hover,
+        .header-link:focus {
+            color: var(--accent-txt-color);
+        }
+    
+    
+        .header-link {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+    .header-cntct::before {
+        display: block;
+        content: "";
+        width: 16px;
+      height: 12px;
+        background-image: url("../images/envelope.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+        
+    }
+
+        .header-cntct:hover,
+        .header-cntct:focus {
+            color: var(--accent-txt-color);
+            cursor: pointer;
+        }
+
+                .header-tel-item::before {
+                    display: block;
+                        content: "";
+                        width: 10px;
+                        height: 16px;
+                        background-image: url("../images/smartphone.svg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        margin-right: 10px;
+                }
+
+                    .header-tel-item:hover,
+                    .header-tel-item:focus {
+                        color: var(--accent-txt-color);
+                        cursor: pointer;
+                    }
+
+
+        /* .header-contacts-item::before {
+            background-image: url("../images/envelope.svg");
+           
+        } */
 
 
     .header-logo {
@@ -462,6 +507,58 @@ section {
         background-color: #188CE8;
     }
 
+        .regular-customers {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.03em;
+    
+            color: #212121;
+            margin-bottom: 50px;
+            }
+
+
+        .regular-us {
+            display: flex;
+            gap: 30px;
+        }
+
+
+            .regular-info {
+                width: 170px;
+                
+            }
+
+                .regular-icon {
+                    width: 106px;
+                    height: 60px;
+                }
+
+                .regular-icon-list {
+                    border: 1px solid #AFB1B8;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 92px;
+                    
+                }
+
+                .regular-icon-list:hover .regular-icon,
+                .regular-icon-list:focus .regular-icon {
+                    border: 1px solid var(--accent-text-color);
+                    fill: var(--accent-txt-color);
+                
+                }
+
+                .regular-icon {
+                    fill: rgba(175, 177, 184, 1);
+                }
+
+            
+
+
     .benefits-us {
         display: flex;
         justify-content: space-between;
@@ -536,12 +633,13 @@ section {
             text-align: center;
             letter-spacing: 0.03em;
             
-
-            
             color: var(--main-color-btn);
            margin-bottom: 50px;
 
         }
+
+
+
 
         .team-employees {
             font-weight: 500;
@@ -565,6 +663,40 @@ section {
 
                 color:var(--card-text);
             }
+
+
+            .team-soc-link {
+                display: flex;
+                justify-content: center;
+            }
+
+            .team-soc-item {
+                margin-left: 10px;
+            }
+
+            .team-soc-link {
+                width: 40px;
+                height: 40%;
+                border-radius: 50%;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .team-soc-link:hover,
+            .team-soc-link:focus {
+                background-color: var(--accent-txt-color);
+                
+            }
+
+            .team-soc-link:hover .team-soc-icon,
+            .team-soc-link:focus .team-soc-icon {
+                fill: #FFFFFF;
+
+            }
+
+            
 
 
 
@@ -612,4 +744,29 @@ section {
     
      .footer-contact {
             text-decoration: none;
+     }
+
+
+     .soc-links-footer-list {
+        display: flex;
+        gap: 10px;
+     }
+
+     .soc-links-footer {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: #FFFFFF;
+
+     }
+
+     .soc-link-footer:hover,
+     .soc-link-footer:focus {
+        border-color: var(--accent-txt-color);
+        fill: #FFFFFF;
      }
