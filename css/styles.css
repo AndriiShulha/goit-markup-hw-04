@@ -219,8 +219,8 @@ section {
     }
 
 
-    .header-cntct {
-        margin-left: 50px;
+    .header-cntct:not(:last-child) {
+        margin-right: 50px;
     }
 
         .header-link:hover,
