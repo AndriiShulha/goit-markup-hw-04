@@ -457,6 +457,33 @@ section {
     
     }
 
+    .team-wrapper:hover,
+    .team-wrapper:focus {
+       border: 1px solid transparent;
+       color: #EEEEEE;
+          
+    }
+
+ .card-link {
+     display: block;
+ }
+
+    .card-link:hover,
+    .card-link:focus {
+        cursor: pointer;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+            
+    }
+
+   
+/* 
+    .team-wrapper:hover,
+    .team-wrapper:focus {
+        border: 1px solid transparent;
+    } */
+
 
 
     .cards {
@@ -529,7 +556,8 @@ section {
 
 
         .regular-us {
-            display: flex;
+            display:flex;
+            
             gap: 30px;
         }
 
@@ -540,6 +568,7 @@ section {
             }
 
                 .regular-icon {
+                    fill: rgba(175, 177, 184, 1);
                     width: 106px;
                     height: 60px;
                 }
@@ -551,6 +580,7 @@ section {
                     justify-content: center;
                     align-items: center;
                     height: 92px;
+                    outline: none;
                     
                 }
 
@@ -561,9 +591,7 @@ section {
                 
                 }
 
-                .regular-icon {
-                    fill: rgba(175, 177, 184, 1);
-                }
+                
 
             
 
@@ -679,9 +707,9 @@ section {
                 justify-content: center;
             }
 
-            .team-soc-item {
-                margin-left: 10px;
-            }
+                  .team-soc-item + .team-soc-item {
+                       margin-left: 10px;
+                   }
 
             .team-soc-link {
                 width: 40px;
@@ -699,10 +727,20 @@ section {
                 
             }
 
+            .team-soc-icon {
+                fill: #AFB1B8;
+            }
+
+
             .team-soc-link:hover .team-soc-icon,
             .team-soc-link:focus .team-soc-icon {
                 fill: #FFFFFF;
 
+            }
+
+            .team-soc-list {
+                display: flex;
+                justify-content: center;
             }
 
             
@@ -721,6 +759,7 @@ section {
         line-height: 1.19;
         letter-spacing: 0.03em;
         color: var(--accent-txt-color);
+       
     }
      
      .link:hover,
@@ -774,8 +813,21 @@ section {
 
      }
 
-     .soc-link-footer:hover,
-     .soc-link-footer:focus {
+     .soc-links-footer:hover,
+     .soc-links-footer:focus {
         border-color: var(--accent-txt-color);
         fill: #FFFFFF;
+        cursor: pointer;
+     }
+
+     .footer-container {
+        display: flex;
+        align-items: baseline;
+     }
+
+     .soc-links-footer-title {
+        font-size: 14px;
+        text-transform: uppercase;
+        
+            color: #FFFFFF;
      }
