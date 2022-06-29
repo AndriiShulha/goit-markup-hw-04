@@ -157,6 +157,7 @@ section {
 
  .header-link {
      color: var(--card-text);
+
      
 }
 
@@ -231,20 +232,28 @@ section {
         .header-link {
             padding-top: 32px;
             padding-bottom: 32px;
+            display: flex;
+            align-items: center;
         }
 
-    .header-cntct::before {
+        .contact-link-icon {
+            margin-right: 10px;
+            fill: currentColor;
+        }
+
+
+    /* .header-cntct::before {
         display: block;
         content: "";
         width: 16px;
-      height: 12px;
+        height: 12px;
         background-image: url("../images/envelope.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         margin-right: 10px;
         
-    }
+    } */
 
         .header-cntct:hover,
         .header-cntct:focus {
@@ -252,7 +261,7 @@ section {
             cursor: pointer;
         }
 
-                .header-tel-item::before {
+                /* .header-tel-item::before {
                     display: block;
                         content: "";
                         width: 10px;
@@ -262,7 +271,7 @@ section {
                         background-repeat: no-repeat;
                         background-position: center;
                         margin-right: 10px;
-                }
+                } */
 
                     .header-tel-item:hover,
                     .header-tel-item:focus {
