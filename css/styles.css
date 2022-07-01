@@ -557,7 +557,6 @@ section {
 
         .regular-us {
             display:flex;
-            
             gap: 30px;
         }
 
@@ -567,11 +566,7 @@ section {
                 
             }
 
-                .regular-icon {
-                    fill: rgba(175, 177, 184, 1);
-                    width: 106px;
-                    height: 60px;
-                }
+               
 
                 .regular-icon-list {
                     border: 1px solid #AFB1B8;
@@ -584,9 +579,20 @@ section {
                     
                 }
 
+                .regular-icon-list:hover,
+                .regular-icon-list:focus {
+                    border: 1px solid var(--accent-text-color);
+                }
+
+                .regular-icon {
+                    fill: rgba(175, 177, 184, 1);
+                
+                }
+
+                 
+
                 .regular-icon-list:hover .regular-icon,
                 .regular-icon-list:focus .regular-icon {
-                    border: 1px solid var(--accent-text-color);
                     fill: var(--accent-txt-color);
                 
                 }
@@ -697,8 +703,8 @@ section {
                 line-height: 1.19;
                 text-align: center;
                 letter-spacing: 0.03em;
-
                 color:var(--card-text);
+                margin-bottom: 16px;
             }
 
 
@@ -712,8 +718,8 @@ section {
                    }
 
             .team-soc-link {
-                width: 40px;
-                height: 40%;
+                width: 44px;
+                height: 44px;
                 border-radius: 50%;
                 background-color: #fff;
                 display: flex;
@@ -741,9 +747,13 @@ section {
             .team-soc-list {
                 display: flex;
                 justify-content: center;
+                padding: 0;
             }
 
             
+            .footer-cntct {
+                margin-right: 70px;
+            }
 
 
 
@@ -798,6 +808,7 @@ section {
      .soc-links-footer-list {
         display: flex;
         gap: 10px;
+        padding: 0;
      }
 
      .soc-links-footer {
@@ -815,7 +826,7 @@ section {
 
      .soc-links-footer:hover,
      .soc-links-footer:focus {
-        border-color: var(--accent-txt-color);
+        background: var(--accent-txt-color);
         fill: #FFFFFF;
         cursor: pointer;
      }
